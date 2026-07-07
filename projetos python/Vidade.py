@@ -4,16 +4,13 @@ app = ctk.CTk()
 app.title("verificar idade")
 app.geometry("400x500")
 #Seu Madruga Batendo em Dona Florinda por Vingança Aleia kkkkkk.....
-def SMBDFVA(*args):
-    value = voando.get()
+def SMBDFVA():
 
-    novo_valor = "".join(caracter for caracter in value if caracter.isdigit())
-
+    return voando == "" or voando.isdigite()
 
 
 
-
-
+Chegou_o_disco_voador = app.register(SMBDFVA)
 
 
 def LOTERIAAAAHHH():
@@ -37,7 +34,9 @@ texto = ctk.CTkLabel(app, text="Verifique sua idade.", font=("Arial", 29))
 texto.pack(pady=50, padx=50)
 
 #VOANDO................................................CHEGAMOS AO PLANETA KIKO ONDE HÁ SERES SEM CEREBRO................................................#meme
-voando = ctk.CTkEntry(app, placeholder_text="Insira sua idade.", height=75, width=290, corner_radius=25, fg_color="blue", font=("Arial",24), text_color="black")
+voando = ctk.CTkEntry(app, placeholder_text="Insira sua idade.",
+                       height=75, width=290, corner_radius=25,
+                       fg_color="blue", font=("Arial",24), text_color="black", validatecommand=(Chegou_o_disco_voador, "%P"))
 voando.pack()
 
 #kiko kikando.....................................................
