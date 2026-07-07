@@ -1,0 +1,28 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    align-items: center;
+    background: linear-gradient(320deg, #ff0000, #ebba92, #ffef78);
+    display: flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+
+}
+
+.grade{
+backdrop-filter: blur(5.5px);
+}
