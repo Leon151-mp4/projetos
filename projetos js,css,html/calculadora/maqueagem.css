@@ -30,9 +30,17 @@ height: 650px;
 width: 450px;
 border-radius: 75px;
 box-shadow: -2px 9px rgb(98, 96, 96) ;
+align-items: center;
+display: flex;
+justify-content: center;
 }
 
 
 .IFOOD{
-    height: px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    border-collapse: collapse;
+    margin: o auto;
+    padding: 10px;
 }
