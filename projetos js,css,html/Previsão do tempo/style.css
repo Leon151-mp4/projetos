@@ -9,14 +9,15 @@ body{
 
 .container{
     background-color: rgba(255, 255, 255, 0.6553);
-    width: 100vw;
+    width: 50vw;
     height: 50px;
     border-radius: 20px;
     display: flex;
     position: fixed;
     bottom: 0;
-    left: 0;
+    left: 10;
     justify-content: space-around;
+    right: 10;
 }
 
 .btn{
@@ -26,11 +27,16 @@ body{
 
 .box{
     background-color: rgba(70, 168, 254, 0.6);
-    border-radius: 10px;
+    border-radius: 25px;
     width: 100vw;
     margin-bottom: auto;
     padding-top: 20px;
-    
+    background: linear-gradient(to bottom, #4ea5a9, #79c2f5);
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 
@@ -49,6 +55,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 30px #ffaa00;
 }
 
 .super{
@@ -59,11 +66,31 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 30px #ffd900;
+    filter: blur(2px);
+    padding: 10px;
 }
 
 .conbox{
-    background-color: rgba(255, 255, 255, 0.6553);
-    height: 50px;
-    width: 50px;
+    height: 58vh;
+    width: 90vw;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 60px;
+    overflow-y: auto;
+    background-color: rgba(0, 200, 255, 0.135); 
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
     
+}
+
+.temperature{
+    display: flex;
+    margin: 0;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    color: #ffff;
 }
